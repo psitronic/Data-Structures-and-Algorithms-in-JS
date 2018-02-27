@@ -20,7 +20,8 @@ A basic building block for the linked list implementation. Each node contains th
 <li><b>LinkedList()</b> creates a new empty list.</li>
 <li><b>add(element)</b> adds a new element to the list.</li>
 <li><b>isEmpty</b> checks whether the list is empty.</li>
-<li><b>size()</b> returns the number of elements in the list</li>
+<li><b>print()</b> returns a string representation of the list.</li>
+<li><b>size()</b> returns the number of elements in the list.</li>
 </ul>
 </li>
 </ul>
