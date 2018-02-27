@@ -63,6 +63,31 @@ class LinkedList {
         this.head = new_node;
     }
 
+    delete(element) {
+        /*
+        Removes an element from the list.
+        Takes an element to remove.
+        Modifies the list.
+        Returns nothing.
+        */
+       var current = this.head;
+       var previous = 0;
+
+       while (current != null) {
+           if (element == current.Value) {
+               if (previous != null) {
+                   previous.Pointer = current.Pointer;
+                } else {
+                    this.head = current.Pointer;
+                }
+                break;
+            } else {
+                previous = current;
+                current = current.Pointer;
+            }
+       }
+    }
+
     isEmpty() {
         /*
         Checks if the list empty
@@ -96,3 +121,14 @@ class LinkedList {
         return result.replace(/["]+/g, '');
     }
 }
+
+const ll = new LinkedList();
+console.log(ll.isEmpty());
+ll.add(1);
+ll.add(2);
+ll.add(30);
+console.log(ll.size);
+console.log(ll.print());
+ll.delete(1);
+console.log(ll.size);
+console.log(ll.print());

@@ -7,8 +7,8 @@ Implementations of  Data Structures and Algorithms in JavaScript
 <p>
 A basic building block for the linked list implementation. Each node contains the list <i>element</i> and <i>pointer</i> - a reference to the next node. It is implemented as a class with the setters and getters to access and modify the element and the pointer:
 <ul>
-<li><b>Value()</b> is a getter which return the element value.</li> 
-<li><b>Pointer()</b> is a getter which return the pointer to the next node (next element) in the list.</li>
+<li><b>Value()</b> is a getter which returns the element value.</li> 
+<li><b>Pointer()</b> is a getter which returns the pointer to the next node (next element) in the list.</li>
 <li><b>Pointer(pointer)</b> is a setter which sets the pointer for the current node to the next node.</li>
 </ul>
 </p>
