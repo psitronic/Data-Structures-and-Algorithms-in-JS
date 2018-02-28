@@ -88,6 +88,30 @@ class LinkedList {
        }
     }
 
+    append(element) {
+        /*
+        Adds a new element to the end of the list making it the last element in the list
+        Takes an element
+        Returns nothing
+        */
+       var current = this.head;// get the first node (head)
+       var previous = null;
+       // searching for the last element in the list
+       // the last element has a pointer to None
+       if (this.isEmpty()) {
+           this.add(element);
+       } else {
+           while (current != null) {
+               previous = current;
+               current = current.Pointer; // move to the next node
+           }
+
+           var new_node = new Node(element); // create a new node with data and pointer to None
+           new_node.Pointer = null;
+           previous.Pointer = new_node; // set the pointer of previous last to the new las node
+       }
+    }
+
     insert(index, element) {
         /*
         Adds a new element to the list at position index
@@ -191,6 +215,7 @@ class LinkedList {
 }
 
 const ll = new LinkedList();
+ll.append(0);
 ll.add(1);
 ll.add(2);
 ll.add(30);
@@ -203,5 +228,8 @@ ll.pop(1);
 console.log(ll.size);
 console.log(ll.print());
 ll.delete(20);
+console.log(ll.size);
+console.log(ll.print());
+ll.append(10);
 console.log(ll.size);
 console.log(ll.print());
