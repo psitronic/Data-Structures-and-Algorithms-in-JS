@@ -71,7 +71,7 @@ class LinkedList {
         Returns nothing.
         */
        var current = this.head;
-       var previous = 0;
+       var previous = null;
 
        while (current != null) {
            if (element == current.Value) {
@@ -85,6 +85,33 @@ class LinkedList {
                 previous = current;
                 current = current.Pointer;
             }
+       }
+    }
+
+    insert(index, element) {
+        /*
+        Adds a new element to the list at position index
+        */
+
+       if (index == 0) {
+           this.add(element); // add the element to the front end
+       } else if (index == this.size + 1) {
+           this.append(element); // add the element to the rear end
+       } else if (index > 0 && index < this.size + 1) {
+           var current = this.head; // get the first node (head)
+           var previous = null;
+           var counter = 1;
+
+           while (counter < index + 1) {
+               counter++;
+               previous = current; // remember the current node
+               current = current.Pointer; // move to the next node
+           }
+
+           var new_node = new Node(element); // create a new node
+           new_node.Pointer = current; // link the new node to the next
+           previous.Pointer = new_node; // link the previous node to the new
+ 
        }
     }
 
@@ -169,6 +196,12 @@ ll.add(2);
 ll.add(30);
 console.log(ll.size);
 console.log(ll.print());
-ll.pop(0);
+ll.insert(0,20);
+console.log(ll.size);
+console.log(ll.print());
+ll.pop(1);
+console.log(ll.size);
+console.log(ll.print());
+ll.delete(20);
 console.log(ll.size);
 console.log(ll.print());
