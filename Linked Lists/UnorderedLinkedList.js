@@ -8,7 +8,7 @@ Methods:
    set_pointer()
     
 @author: Andrey Sidorenko aka @psitronic
-    */
+*/
 class Node {
     // A class to implement a node
     constructor(element) {
@@ -88,6 +88,47 @@ class LinkedList {
        }
     }
 
+    pop(index = null) {
+        /*
+        Removes and returns the element at the index postion in the list.
+        Returns the removed element
+        */
+        var current = this.head; // get the first node (head)
+        var previous = null;
+        var counter = 0;
+        //  if no index provided then pop the last element in the list
+        if (index == null) {
+            while (counter < this.size - 1) {
+                counter++;
+                previous = current; // remember the current node
+                current = current.Pointer; // move to the next node
+            }
+            if (previous != null) {
+                previous.Pointer = null;
+            } else {
+                this.head = current.Pointer;
+            }
+        // else pop the element at the position index
+        } else {
+            while (counter < this.size) {
+                if (counter == index) {
+                    if (previous != null) {
+                        previous.Pointer = current.Pointer;
+                     } else {
+                         this.head = current.Pointer;
+                     }
+                     break;
+                 } else {
+                     counter++;
+                     previous = current;
+                     current = current.Pointer;
+                 }
+     
+            }
+        }
+    return current.Value;
+    }
+
     isEmpty() {
         /*
         Checks if the list empty
@@ -123,12 +164,11 @@ class LinkedList {
 }
 
 const ll = new LinkedList();
-console.log(ll.isEmpty());
 ll.add(1);
 ll.add(2);
 ll.add(30);
 console.log(ll.size);
 console.log(ll.print());
-ll.delete(1);
+ll.pop(0);
 console.log(ll.size);
 console.log(ll.print());
