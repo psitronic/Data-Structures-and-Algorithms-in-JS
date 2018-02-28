@@ -20,6 +20,7 @@ A basic building block for the linked list implementation. Each node contains th
 <li><b>LinkedList()</b> creates a new empty list.</li>
 <li><b>add(element)</b> adds a new element to the list.</li>
 <li><b>delete(element)</b> removes an element from the list.</li>
+<li><b>insert(index, element)</b> adds a new element to the list at position index.</li>
 <li><b>isEmpty</b> checks whether the list is empty.</li>
 <li><b>pop()</b> removes and returns the rear (last) element in the list.</li>
 <li><b>pop(index)</b> removes and returns the element at the index postion in the list.</li>
