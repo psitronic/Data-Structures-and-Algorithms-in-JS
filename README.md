@@ -19,6 +19,7 @@ A basic building block for the linked list implementation. Each node contains th
 <ul>
 <li><b>LinkedList()</b> creates a new empty list.</li>
 <li><b>add(element)</b> adds a new element to the list.</li>
+<li><b>append(element)</b> adds a new element to the end of the list making it the last element in the list</li>
 <li><b>delete(element)</b> removes an element from the list.</li>
 <li><b>insert(index, element)</b> adds a new element to the list at position index.</li>
 <li><b>isEmpty</b> checks whether the list is empty.</li>
