@@ -180,6 +180,22 @@ class LinkedList {
     return current.Value;
     }
 
+    search(element) {
+        /*
+        Searches for the element in the linked list.
+        Takes an element.
+        Returns True if the element in the list, False otherwise
+        */
+        var node = this.head;
+
+        while (node != null) {
+            if (element == node.Value){
+                return true;
+            }
+            node = node.Pointer;
+        }
+    }
+
     isEmpty() {
         /*
         Checks if the list empty
@@ -233,3 +249,4 @@ console.log(ll.print());
 ll.append(10);
 console.log(ll.size);
 console.log(ll.print());
+console.log(ll.search(10))
