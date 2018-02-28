@@ -26,6 +26,7 @@ A basic building block for the linked list implementation. Each node contains th
 <li><b>pop()</b> removes and returns the rear (last) element in the list.</li>
 <li><b>pop(index)</b> removes and returns the element at the index postion in the list.</li>
 <li><b>print()</b> returns a string representation of the list.</li>
+<li><b>search(element)</b> searches for the element in the linked list.</li>
 <li><b>size()</b> returns the number of elements in the list.</li>
 </ul>
 </li>
