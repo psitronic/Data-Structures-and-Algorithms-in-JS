@@ -216,6 +216,22 @@ class LinkedList {
         return counter;
     }
 
+    index(element) {
+        /*
+        Returns the position of element in the list.
+        Takes an element.
+        Returns an index.
+        */
+       var node = this.head; //get the first node (head)
+       var counter = 0;
+       // do it unless the element found
+       while (node.Value != element) {
+           counter++; // count the position number
+           node = node.Pointer; // move to the next node
+       }
+       return counter;
+    }
+
     print() {
         // Returns a string representation of the list
         var current = this.head; // get the first node (head)
@@ -249,4 +265,4 @@ console.log(ll.print());
 ll.append(10);
 console.log(ll.size);
 console.log(ll.print());
-console.log(ll.search(10))
+console.log(ll.index(10))
