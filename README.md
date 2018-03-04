@@ -13,6 +13,22 @@ A basic building block for the linked list implementation. Each node contains th
 </ul>
 </p>
 </li>
+
+<li>
+<h3><a href="https://github.com/psitronic/Data-Structures-and-Algorithms-in-JS/tree/master/Stacks">Stack FILO</a></h3>
+<p>
+A basic "First In Last Out" stack. It is implemented as a class with the setters and getters to access elements in the stack:
+<ul>
+<li><b>Stack()</b> creates a new empty stack.</li>
+<li><b>isEmpty()</b> checks if the satck is empty.</li>
+<li><b>peek()</b> peeks the bottom element in the stack.</li>
+<li><b>pop()</b> removes and returns the bottom element.</li>
+<li><b>push(element)</b> adds an element to the bottom of the stack.</li> 
+<li><b>size()</b> returns the stack length.</li>
+</ul>
+</p>
+</li>
+
 <li>
 <h3><a href="https://github.com/psitronic/Data-Structures-and-Algorithms-in-JS/tree/master/Linked%20Lists">Singly Linked Lists (unordered)</a></h3>
 <p>A singly linked list is a collection of nodes where each node points to the next node. The implemented list operations:
