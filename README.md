@@ -47,4 +47,25 @@ A basic "First In Last Out" stack. It is implemented as a class with the setters
 <li><b>size()</b> returns the number of elements in the list.</li>
 </ul>
 </li>
+
+<li>
+<h3><a href="https://github.com/psitronic/Data-Structures-and-Algorithms-in-JS/tree/master/Binary%20Tree">Binary Tree (List of Lists Representation)</a></h3>
+<p>
+A binary tree is a tree in which each node has two children. It is implemented as a list of lists using functions:
+<ul>
+<li><b>binaryTree(root)</b> creates a new empty binary tree.</li>
+<li><b>insertLeft(root, newBranch)</b> inserts a new binary tree as the left child of the
+current node.</li>
+<li><b>insertRight(root, newBranch)</b> inserts a new binary tree as the left child of the
+current node.</li>
+<li><b>getRootValue(root)</b> returns the value of the current node.</li>
+<li><b>setRootValue(root, newValue)</b> sets the value of the current node.</li> 
+<li><b>getLeftChild(root)</b> returns the binary tree corresponding to the left child of the current
+node.</li>
+<li><b>getRightChild(root)</b> returns the binary tree corresponding to the right child of the current
+node.</li>
+</ul>
+</p>
+</li>
+
 </ul>
