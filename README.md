@@ -30,6 +30,21 @@ A basic "First In Last Out" stack. It is implemented as a class with the setters
 </li>
 
 <li>
+<h3><a href="https://github.com/psitronic/Data-Structures-and-Algorithms-in-JS/tree/master/Queue">Queue FIFO</a></h3>
+<p>
+A queue is an ordered collection of items with First In First Out (FIFO) ordering. Items are
+removed from the queue in the same order that they are added:
+<ul>
+<li><b>Queue()</b> creates a new empty queue.</li>
+<li><b>add(element)</b> adds an item to the end of the queue.</li>
+<li><b>isEmpty()</b> checks if the queue is empty.</li>
+<li><b>get()</b> removes and returns the first element in the queue.</li>
+<li><b>size()</b> returns the queue length.</li>
+</ul>
+</p>
+</li>
+
+<li>
 <h3><a href="https://github.com/psitronic/Data-Structures-and-Algorithms-in-JS/tree/master/Linked%20Lists">Singly Linked Lists (unordered)</a></h3>
 <p>A singly linked list is a collection of nodes where each node points to the next node. The implemented list operations:
 <ul>
