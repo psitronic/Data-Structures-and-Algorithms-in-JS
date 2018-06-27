@@ -1,5 +1,5 @@
 # Data Structures and Algorithms
-Implementations of  Data Structures and Algorithms in JavaScript
+Implementations of  Data Structures and Algorithms in JavaScript (Python version can be found <a href="https://github.com/psitronic/small-tools">here</a>)
 
 <ul>
 <li>
